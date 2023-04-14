@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+    />
+  </head>
+  <body class="flex flex-row bg-gray-100">
+    <div class="w-1/5 bg-gray-800 text-white h-screen">
+      <h1 class="text-2xl font-bold m-4">Mon application</h1>
+      <ul class="list-none pl-8">
+        <li class="mb-2">
+          <a href="main.html" class="hover:text-gray-300">Accueil</a>
+        </li>
+        <li class="mb-2">
+          <a href="users.html" class="hover:text-gray-300">Utilisateurs</a>
+        </li>
+      </ul>
+    </div>
+    <div class="w-4/5 p-4">
+      <h1 class="text-2xl font-bold mb-4">Bienvenue</h1>
+      <p class="text-lg">
+        Ceci est la page d'accueil de l'espace d'administration.
+      </p>
+      <button
+        id="save-btn"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Enregistrer
+      </button>
+      <span id="saved-file"></span>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>
